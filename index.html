@@ -12,7 +12,7 @@
   <body>
     <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
     <div class="page">
-      <header class="header">
+      <header class="header main-background-color">
         <nav class="nav">
           <img
             src="./images/logo.png"
@@ -22,19 +22,19 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a class="nav__link" href="#staff">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link">Events</a>
+              <a class="nav__link" href="#events">Events</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
+              <a class="nav__link" href="#membership">Become a member</a>
             </li>
             <li>
-              <a class="nav__link">About</a>
+              <a class="nav__link" href="#about">About</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a class="nav__link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -44,9 +44,7 @@
           your development knowledge, or just use this lovely spot to work or
           study. This is a cool place for cool students!
         </p>
-        ----------------------------------------------------------------- Don't
-        uncomment until project stage 2
-        -----------------------------------------------------------------
+
         <img
           src="./images/inside_the_library.png"
           alt="Illustration 'Inside the library'"
@@ -61,7 +59,7 @@
       </header>
 
       <main class="content">
-        <section class="events">
+        <section id="#events" class="events main-background-color">
           <!-- --------------------------------------------------------------- -->
           <!--              Don't uncomment until project stage 2              -->
           <!-- --------------------------------------------------------------- -->
@@ -144,171 +142,271 @@
           </div>
         </section>
 
-        <section class="staff">
+        <section id="#staff" class="staff staff_padding_TB">
           <!-- --------------------------------------------------------------- -->
           <!--        Don't uncomment until the final project stage            -->
           <!-- --------------------------------------------------------------- -->
-          <!--<h2 class="staff__title">Staff picks</h2>
-        <p class="staff__subtitle">That our readers love</p>
-        <ul>
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">Introduction to Algorithms</h3>
-              <p class="card__text">
-                The name of this book is self-explanatory; it's a proper
-                introduction to algorithms! Introduction to Algorithms, or CLRS,
-                in reference to the authors' last names, goes in-depth and
-                covers a range of algorithms across several self-contained
-                chapters.
-              </p>
-              <p class="card__footer">
-                Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
-                Clifford Stein
-              </p>
-            </div>
-          </li>
+          <h2 class="staff__title main-contrast-color">Staff picks</h2>
+          <p class="staff__subtitle main-contrast-color">
+            That our readers love
+          </p>
+          <ul class="staff__cards">
+            <li class="card main-background-color">
+              <div class="card__content">
+                <h3 class="card__title card-text-align">
+                  Introduction to Algorithms
+                </h3>
+                <p class="card__text card-text-align">
+                  The name of this book is self-explanatory; it's a proper
+                  introduction to algorithms! Introduction to Algorithms, or
+                  CLRS, in reference to the authors' last names, goes in-depth
+                  and covers a range of algorithms across several self-contained
+                  chapters.
+                </p>
+                <p class="card__footer footer-link-cover-color card-text-align">
+                  Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
+                  Clifford Stein
+                </p>
+              </div>
+            </li>
 
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">
-                The Structure and Interpretation of Computer Programs (SICP)
-              </h3>
-              <p class="card__text">
-                This is one of the best books for learning the fundamentals of
-                programming. Featured by MIT in one of their foundational
-                programming courses, SICP is a general-purpose programming book
-                that uses Scheme to illustrate various programming concepts.
-              </p>
-              <p class="card__footer">
-                Harold Abelson, Gerald Jay Sussman, Julie Sussman
-              </p>
-            </div>
-          </li>
+            <li class="card main-background-color">
+              <div class="card__content">
+                <h3 class="card__title card-text-align">
+                  The Structure and Interpretation of Computer Programs (SICP)
+                </h3>
+                <p class="card__text card-text-align">
+                  This is one of the best books for learning the fundamentals of
+                  programming. Featured by MIT in one of their foundational
+                  programming courses, SICP is a general-purpose programming
+                  book that uses Scheme to illustrate various programming
+                  concepts.
+                </p>
+                <p class="card__footer footer-link-cover-color card-text-align">
+                  Harold Abelson, Gerald Jay Sussman, Julie Sussman
+                </p>
+              </div>
+            </li>
 
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">
-                The Clean Coder: A Code of Conduct for Professional Programmers
-              </h3>
-              <p class="card__text">
-                Compiled by seasoned software engineer and author Robert C.
-                Martin (also known as Uncle Bob), this book covers the
-                techniques and tools of true software craftsmanship. It explains
-                how to write clean code and demonstrates how to cultivate the
-                attitude of a skilled, professional programmer.
-              </p>
-              <p class="card__footer">Steve McConnell</p>
-            </div>
-          </li>
+            <li class="card main-background-color">
+              <div class="card__content">
+                <h3 class="card__title card-text-align">
+                  The Clean Coder: A Code of Conduct for Professional
+                  Programmers
+                </h3>
+                <p class="card__text card-text-align">
+                  Compiled by seasoned software engineer and author Robert C.
+                  Martin (also known as Uncle Bob), this book covers the
+                  techniques and tools of true software craftsmanship. It
+                  explains how to write clean code and demonstrates how to
+                  cultivate the attitude of a skilled, professional programmer.
+                </p>
+                <p class="card__footer footer-link-cover-color card-text-align">
+                  Steve McConnell
+                </p>
+              </div>
+            </li>
 
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">
-                Code Complete: A Practical Handbook of Software Construction
-              </h3>
-              <p class="card__text">
-                Want to know how to write robust code irrespective of the
-                architecture behind your chosen programming language? Then
-                consider reading Code Complete: A Practical Handbook of Software
-                Construction. It comprehensively covers everything related to
-                good code structure.
-              </p>
-              <p class="card__footer">Steve McConnell</p>
-            </div>
-          </li>
-        </ul>-->
+            <li class="card main-background-color">
+              <div class="card__content">
+                <h3 class="card__title card-text-align">
+                  Code Complete: A Practical Handbook of Software Construction
+                </h3>
+                <p class="card__text card-text-align">
+                  Want to know how to write robust code irrespective of the
+                  architecture behind your chosen programming language? Then
+                  consider reading Code Complete: A Practical Handbook of
+                  Software Construction. It comprehensively covers everything
+                  related to good code structure.
+                </p>
+                <p class="card__footer footer-link-cover-color card-text-align">
+                  Steve McConnell
+                </p>
+              </div>
+            </li>
+          </ul>
         </section>
 
-        <section class="membership">
+        <section id="#membership" class="membership main-background-color">
           <!-- --------------------------------------------------------------- -->
           <!--         Don't uncomment until the final project stage           -->
           <!-- --------------------------------------------------------------- -->
-          <!--<h2 class="membership__title">Becoming a library member is easy!</h2>
-        <ul class="membership__steps">
-          <li class="step">
-            <h3 class="step__title">
-              Step 1
-              <img
-                src="./images/icon_step_forward.svg"
-                alt="icon forward"
-                class="step__icon"
-              />
-            </h3>
-            <p class="step__description">
-              Fill out the membership form online or in person.
-            </p>
-          </li>
-          <li class="step">
-            <h3 class="step__title">
-              Step 2
-              <img
-                src="./images/icon_step_forward.svg"
-                alt="icon forward"
-                class="step__icon"
-              />
-            </h3>
-            <p class="step__description">
-              Come pick up your library card at the front desk.
-            </p>
-          </li>
-          <li class="step">
-            <h3 class="step__title">
-              Step 3
-              <img
-                src="./images/icon_step_forward.svg"
-                alt="icon forward"
-                class="step__icon"
-              />
-            </h3>
-            <p class="step__description">Sign the back of the card.</p>
-          </li>
-          <li class="step">
-            <h3 class="step__title">
-              Step 4
-              <img
-                src="./images/icon_step_finish.svg"
-                alt="icon finish"
-                class="step__icon"
-              />
-            </h3>
-            <p class="step__description">
-              Enjoy all the awesome benefits of membership!
-            </p>
-          </li>
-        </ul>-->
+          <h2 class="membership__title membership__title-font-size-l">
+            Becoming a library member is easy!
+          </h2>
+          <ul class="membership__steps">
+            <li class="step">
+              <h3 class="step__title">
+                Step 1
+                <img
+                  src="./images/icon_step_forward.svg"
+                  alt="icon forward"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">
+                Fill out the membership form online or in person.
+              </p>
+            </li>
+            <li class="step">
+              <h3 class="step__title">
+                Step 2
+                <img
+                  src="./images/icon_step_forward.svg"
+                  alt="icon forward"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">
+                Come pick up your library card at the front desk.
+              </p>
+            </li>
+            <li class="step">
+              <h3 class="step__title">
+                Step 3
+                <img
+                  src="./images/icon_step_forward.svg"
+                  alt="icon forward"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">Sign the back of the card.</p>
+            </li>
+            <li class="step">
+              <h3 class="step__title">
+                Step 4
+                <img
+                  src="./images/icon_step_finish.svg"
+                  alt="icon finish"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">
+                Enjoy all the awesome benefits of membership!
+              </p>
+            </li>
+          </ul>
         </section>
+        <!-- staff_padding_TB -->
+        <!-- --------------------------------------------------------------- -->
+        <!--          Don't uncomment until the final project stage          -->
+        <!-- --------------------------------------------------------------- -->
+        <section id="#about" class="about">
+          <div class="about__circle"></div>
+          <div class="about__wrapper">
+            <div class="about__sub-wrapper">
+              <h2 class="about__title main-contrast-color about-text-h2-align">
+                About the library
+              </h2>
 
-        <section class="about">
-          <!-- --------------------------------------------------------------- -->
-          <!--          Don't uncomment until the final project stage          -->
-          <!-- --------------------------------------------------------------- -->
-          <!--<h2 class="about__title">About the library</h2>
-        <div class="about__content">
-          <p class="about__paragraph">
-            Libraries are essential establishments in practically every city,
-            and Practicum's library is no exception. It first opened its doors
-            way back in 2018, right as our humble town began bidding welcome to
-            its very first citizens!
-          </p>
-          <p class="about__paragraph">
-            Since its initial opening, the library has seen nearly 342 visitors
-            each month. That's almost 50% of our population! So far, most
-            citizens have enjoyed reading books and making use of our ample
-            online resources.
-          </p>
-          <p class="about__paragraph">
-            The library gets its name from Joan Feynman, an American
-            astrophysicist and the first woman to be elected as an officer of
-            the American Geophysical Union.
-          </p>
-        </div>
-        <div class="about__circle"></div> -->
+              <div class="about__content">
+                <p
+                  class="about__paragraph main-contrast-color about-text-p-align"
+                >
+                  Libraries are essential establishments in practically every
+                  city, and Practicum's library is no exception. It first opened
+                  its doors way back in 2018, right as our humble town began
+                  bidding welcome to its very first citizens!
+                </p>
+                <p
+                  class="about__paragraph main-contrast-color about-text-p-align"
+                >
+                  Since its initial opening, the library has seen nearly 342
+                  visitors each month. That's almost 50% of our population! So
+                  far, most citizens have enjoyed reading books and making use
+                  of our ample online resources.
+                </p>
+                <p
+                  class="about__paragraph main-contrast-color about-text-p-align"
+                >
+                  The library gets its name from Joan Feynman, an American
+                  astrophysicist and the first woman to be elected as an officer
+                  of the American Geophysical Union.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer id="#footer" class="footer footer-background-color">
         <!-- ----------------------------------------------------------------- -->
         <!--          Don't uncomment until the final project stage            -->
         <!-- ----------------------------------------------------------------- -->
+        <div class="footer__columns footer-background-color">
+          <!-- we have to get out of this wrapper  -->
+          <!-- <div class="footer__wrapper"> -->
+          <!-- footer column -->
+          <div class="footer__column">
+            <img
+              src="images/logo_white.png"
+              alt="White practicum logo"
+              class="footer__logo"
+            />
+          </div>
+
+          <!-- <div class="footer__wrapper">
+
+          </div> -->
+
+          <div class="footer__column footer__column_content_hours">
+            <!-- footer column -->
+            <h4 class="footer__column-heading main-contrast-color">Hours</h4>
+            <ol class="footer__list">
+              <li class="footer__list-item">
+                <p
+                  class="footer__list-items main-contrast-color footer__list-items_margin-top_20px"
+                >
+                  Weekdays: 9am-8pm
+                </p>
+              </li>
+              <li class="footer__list-item">
+                <p
+                  class="footer__list-items main-contrast-color footer__list-items_margin-top_16px"
+                >
+                  Weekends: 10am-6pm
+                </p>
+              </li>
+            </ol>
+          </div>
+          <div
+            id="#contacts"
+            class="footer__column footer__column_content_social"
+          >
+            <h5 class="footer__column-heading main-contrast-color">
+              Social Media
+            </h5>
+
+            <ol class="footer__list">
+              <li
+                class="footer__column-link footer__column-link_margin-top_20px"
+              >
+                <div class="footer__list-group">
+                  <img src="images/facebook_white.svg" alt="facebook logo" />
+                  <p class="main-contrast-color footer__contact-text">
+                    facebook
+                  </p>
+                </div>
+              </li>
+              <li
+                class="footer__column-link footer__column-link_margin-top_16px"
+              >
+                <div class="footer__list-group">
+                  <img
+                    class="image"
+                    src="images/instagram_white.svg"
+                    alt="instagram logo"
+                  />
+                  <p class="main-contrast-color footer__contact-text">
+                    Instagram
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <p class="footer__copyright main-contrast-color">
+          2023 © Abdurahman Omoruyi
+        </p>
       </footer>
     </div>
   </body>
