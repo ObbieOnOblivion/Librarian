@@ -304,8 +304,8 @@ body {
   position: absolute;
   top: -121px;
   left: -91px;
-  height: 440px;
-  width: 440px;
+  height: 495px;
+  width: 495px;
   border-radius: 50%;
   background-color: #2f80ed;
   z-index: -1;
@@ -412,6 +412,7 @@ body {
 .footer__column-heading {
   margin: 0px;
   padding: 0px;
+  color: #ffffff;
 }
 .footer__list-items {
   margin: 0px;
@@ -503,10 +504,10 @@ body {
   /* margin-bottom: 0px; */
 }
 
-.footer__column-link_margin-top_20px {
+.footer__list-item_margin-top_20px {
   margin-top: 20px;
 }
-.footer__column-link_margin-top_16px {
+.footer__list-item_margin-top_16px {
   margin-top: 16px;
 }
 
