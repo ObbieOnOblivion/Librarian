@@ -494,6 +494,11 @@ body {
   font-weight: 100;
   font-size: large;
 }
+
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
 .footer__list-items_margin-top_16px {
   margin-top: 16px;
   /* margin-bottom: 0px; */
@@ -515,4 +520,10 @@ body {
   margin: 0px;
   padding: 0px;
   margin-left: 10px;
+  color: #ffffff;
+}
+
+.footer__social-icon {
+  height: 16px;
+  width: 16px;
 }
