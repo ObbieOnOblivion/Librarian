@@ -3,7 +3,7 @@
   min-width: 1100px;
   margin: auto;
   margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: “Helvetica Neue”, “Arial”, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -33,12 +33,12 @@
 }
 
 .nav__links {
+  margin: 0;
   margin-top: 8px;
   display: flex;
   column-gap: 20px;
   list-style-type: none;
   padding: 0px;
-  align-items: center;
 }
 
 .nav__link {
@@ -48,6 +48,7 @@
 }
 
 .header__title {
+  margin: 0;
   max-width: 544px;
   font-size: 66px;
   line-height: 76px;
@@ -56,6 +57,7 @@
 }
 
 .header__description {
+  margin: 0px;
   max-width: 532px;
   font-size: 20px;
   line-height: 30px;
@@ -208,7 +210,7 @@
 }
 
 .person__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .person__image_size_l {
@@ -257,6 +259,8 @@
   list-style-type: none;
   background-color: #ffffff;
   justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
 .card__content {
   display: flex;
@@ -271,23 +275,38 @@
 }
 
 .staff__title {
-  color: #ffffff;
-  margin-top: 70px;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 44px;
+  line-height: 52px;
 }
 
 .staff__subtitle {
-  margin-bottom: 0px;
-  color: #ffffff;
+  /* im confused as to where the coloring should go  */
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .membership {
   text-align: center;
+  padding: 100px 0 140px;
+  background-color: #f2f2f2;
 }
 
 .membership__title {
-  font-size: 40px;
+  /* font-size: 40px;
   font-weight: 200;
-  padding-top: 80px;
+  padding-top: 80px; */
+  max-width: 575px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
 }
 
 .membership__steps {
@@ -301,6 +320,15 @@
 
 .step {
   flex-basis: 220px;
+}
+
+.step__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
 }
 
 .about {
@@ -339,21 +367,22 @@
   position: absolute;
   height: 495px;
   width: 495px;
-  background-color: #1f69c9;
+  background-color: #2f80ed;
   border-radius: 50%;
   left: -91px;
   top: -121px;
 }
 
 .footer {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   padding-top: 60px;
-  /* min-height: 360px; */
+  min-height: 224px;
+  background-color: #1f1f1f;
 }
 
 .footer__columns {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding-right: 102px;
   padding-left: 80px;
   flex-direction: row;
@@ -366,13 +395,8 @@
   /* max-width: 116px; */
 }
 
-.footer__column_hours {
-  justify-self: flex-end;
-}
-.footer__social {
-  max-height: 116px;
-  padding-left: 100px;
-  justify-self: flex-end;
+.footer__column_content_hours {
+  margin-left: auto;
 }
 .footer__social-icon {
   margin-right: 10px;
@@ -385,15 +409,6 @@
   height: 21px;
 }
 
-.footer__wrapper {
-  /* margin: 0px 102px 60px 80px;
-  padding-left: 60px;
-  padding-right: 60px;
-  min-height: 224px; */
-  display: flex;
-  /* justify-content: space-between; */
-}
-
 .footer__list {
   list-style-type: none;
   margin: 0px;
@@ -404,11 +419,13 @@
 }
 
 .footer__copyright {
-  font-size: 12px;
+  font-size: 16px;
   max-width: max-content;
   padding-left: 80px;
-  padding-top: 108px;
-  margin: 0px;
+  margin-top: 108px;
+  padding-bottom: 60px;
+  margin-bottom: 0px;
+  color: #ffffff;
 }
 
 .footer__column_content_social {
@@ -429,43 +446,16 @@
   color: #ffffff;
   margin-bottom: 20px;
 }
-.footer__list-item {
-  color: #ffffff;
-}
 
-.footer__list-items {
+.footer__list-item {
   margin: 0px;
   padding: 0px;
-}
-
-.footer__list-group {
-  display: flex;
-}
-
-.main-background-color {
-  background-color: #ffffff;
-}
-
-.main-contrast-color {
   color: #ffffff;
 }
 
-.contrast-background-color {
-  background-color: #f2f2f2;
+.footer__column-link:hover {
+  color: #c1c1c1;
 }
-
-.footer-background-color {
-  background-color: #1f1f1f;
-}
-
-.link-accents-color {
-  color: #2f80ed;
-}
-
-.link-cover-color {
-  color: #1f69c9;
-}
-
 .nav__link:hover {
   color: #1f69c9;
 }

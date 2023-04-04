@@ -12,7 +12,7 @@
   <body>
     <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
     <div class="page">
-      <header class="header main-background-color">
+      <header class="header">
         <nav class="nav">
           <img
             src="./images/logo.png"
@@ -51,7 +51,7 @@
           class="header__image"
         />
         <div class="header__footer">
-          <a class="header__link">About the library &darr;</a>
+          <a href="#about" class="header__link">About the library &darr;</a>
           <p class="header__address">
             200 Success Avenue, The Town of Practicum
           </p>
@@ -94,12 +94,16 @@
             <a href="#" class="events__more">More events &rarr;</a>
           </div>
           <div class="events__cover">
-            <img src="images/cafe.png" class="events__image" alt="cafe image" />
+            <img
+              src="./images/cafe.png"
+              class="events__image"
+              alt="cafe image"
+            />
             <div class="person person_name_feynman">
               <p class="person__caption">Joan Feynman</p>
               <img
                 class="person__image person__image_size_l"
-                src="images/person_feynman.png"
+                src="./images/person_feynman.png"
                 alt="Joan Feyman Picture"
               />
             </div>
@@ -108,41 +112,41 @@
               <p class="person__caption">Margaret Burbidge</p>
               <img
                 class="person__image person__image_size_m"
-                src="images/person_burbidge.png"
+                src="./images/person_burbidge.png"
                 alt="Margret Burbidge Picture"
               />
             </div>
 
             <div class="person person_name_cannon">
-              <p class="person__caption">Annie Jump Cannon</p>
               <img
                 class="person__image person__image_size_m"
-                src="images/person_cannon.png"
+                src="./images/person_cannon.png"
                 alt="Annie Jump Cannon Picture"
               />
+              <p class="person__caption">Annie Jump Cannon</p>
             </div>
 
             <div class="person person_name_mitchell">
-              <p class="person__caption">Maria Mitchell</p>
               <img
-                class="person__image person__image_size_m"
-                src="images/person_mitchell.png"
+                class="person__image person__image_size_s"
+                src="./images/person_mitchell.png"
                 alt="Maria Mitchell Picture"
               />
+              <p class="person__caption">Maria Mitchell</p>
             </div>
 
             <div class="person person_name_tarter">
               <p class="person__caption">Jill Tarter</p>
               <img
-                class="person__image person__image_size_s"
-                src="images/person_tarter.png"
+                class="person__image person__image_size_m"
+                src="./images/person_tarter.png"
                 alt="jill Tarter Picture"
               />
             </div>
           </div>
         </section>
 
-        <section id="staff" class="staff staff_padding_TB">
+        <section id="staff" class="staff">
           <!-- --------------------------------------------------------------- -->
           <!--        Don't uncomment until the final project stage            -->
           <!-- --------------------------------------------------------------- -->
@@ -305,60 +309,56 @@
           <div class="about__circle"></div>
         </section>
       </main>
-      <footer id="contacts" class="footer footer-background-color">
+      <footer id="contacts" class="footer">
         <!-- ----------------------------------------------------------------- -->
         <!--          Don't uncomment until the final project stage            -->
         <!-- ----------------------------------------------------------------- -->
-        <div class="footer__columns footer-background-color">
+        <div class="footer__columns">
           <div class="footer__column">
             <img
-              src="images/logo_white.png"
+              src="./images/logo_white.png"
               alt="White practicum logo"
               class="footer__logo"
             />
           </div>
 
-          <div class="footer__wrapper">
-            <div class="footer__column footer__column_content_hours">
-              <h4 class="footer__column-heading">Hours</h4>
-              <ul class="footer__list">
-                <li class="footer__list-item">Weekdays: 9am-8pm</li>
-                <li class="footer__list-item">Weekends: 10am-6pm</li>
-              </ul>
-            </div>
-            <div class="footer__column footer__column_content_social">
-              <h4 class="footer__column-heading">Social Media</h4>
+          <div class="footer__column footer__column_content_hours">
+            <h4 class="footer__column-heading">Hours</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">Weekdays: 9am-8pm</li>
+              <li class="footer__list-item">Weekends: 10am-6pm</li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column_content_social">
+            <h4 class="footer__column-heading">Social Media</h4>
 
-              <ul class="footer__list">
-                <li class="footer__list-item footer__list-item_margin-top_20px">
-                  <a class="footer__column-link" href="#">
-                    <img
-                      class="footer__social-icon"
-                      src="images/facebook_white.svg"
-                      alt="facebook logo"
-                    />
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="facebook logo"
+                  />
 
-                    Facebook
-                  </a>
-                </li>
-                <li class="footer__list-item footer__list-item_margin-top_16px">
-                  <a class="footer__column-link" href="#">
-                    <img
-                      class="footer__social-icon"
-                      src="images/instagram_white.svg"
-                      alt="instagram logo"
-                    />
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="instagram logo"
+                  />
 
-                    Instagram
-                  </a>
-                </li>
-              </ul>
-            </div>
+                  Instagram
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <p class="footer__copyright main-contrast-color">
-          2023 © Abdurahman Omoruyi
-        </p>
+        <p class="footer__copyright">2023 © Abdurahman Omoruyi</p>
       </footer>
     </div>
   </body>
